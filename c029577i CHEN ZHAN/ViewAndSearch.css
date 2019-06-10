@@ -1,0 +1,180 @@
+/* Add a black background color to the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+    margin: 0 0 0 0;
+    height:100%;
+}
+.search-bar {
+    margin: 10px 0 10px 80px;
+    background: #2f3640;
+    height: 30px;
+    border-radius: 40px;
+    padding: 10px;
+    color: black;
+    width: 50%;
+}
+
+.search-btn {
+    border: none;
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #3aa55a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 28px; /*placeholder*/
+    font-weight: bold;
+    width: 500px;
+    padding: 0 6px;
+}﻿
+ .submit{
+
+     margin:15px 15px 0 0;
+     background-color: transparent;
+     border: 2px solid #4CAF50; /* Green */;
+     outline: 0;
+     display: inline-block;
+     padding: 8px 5px;
+     color: gray;
+     font-weight: bold;
+     font-size: 16px;
+     text-align: center;
+     cursor: pointer;
+     border-radius: 8px;
+ }
+.submit:hover{
+    background-color: #3aa55a;
+    color: white;
+}
+.button{
+     float:right;
+     margin:15px 15px 0 0;
+     background-color: #3aa55a;
+     border: none;
+     outline: 0;
+     display: inline-block;
+     padding: 10px;
+     color: white;
+     font-weight: bold;
+     font-size: 16px;
+     text-align: center;
+     cursor: pointer;
+     border-radius: 8px;
+ }
+
+.button:hover {
+    background-color: #555;
+    color: white;
+}
+/*===================picture============*/
+.picture {
+
+    object-fit: cover;
+    height:435px;
+    width: 400px;
+    margin:auto;
+    padding:20px;
+
+
+
+}
+.container-picture {
+
+    overflow: scroll;
+    background-color: #0f81cc;
+    margin: 0 0 0 0;
+    max-width: 100000px;
+/*使水平居中*/
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display: flex;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    text-align:center;
+    /* flex-direction: row;
+    width:50vw;
+    position: absolute;
+align-items:center;
+    /*justify-content:center;*/
+   /* max-width: 50vw;
+
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 60vw;
+    margin-left: 20vw;
+    margin-right: 20vw;*/
+
+}
+
+.container-item {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    width: 50%;
+}
+/*============overlay===========*/
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+    opacity: 0.6;
+}
+
+.container-item:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+footer{
+    text-align: center;
+    position:page;
+
+}
+
+
+footer{
+    text-align: center;
+    position:page;
+    background-color: white;
+    color:black
+}

@@ -1,0 +1,207 @@
+
+html, body, div, h1, h2, h3, h4, h5, h6, p, span, img, input {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-size: 19px;
+    font-family: 'Verdana','Arial';
+    color: rgba(0,0,0,0.8);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url("images/backgroudimages/Train_Rail_during_Golden_Hour.jpg");
+    background-position: center top;
+    background-size: cover;
+}
+
+.content {
+    width: 400px;
+    height: 290px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    overflow: hidden;
+    z-index: 2;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(20px);
+    z-index: -3;
+    margin: -30px;
+    background-image: url("images/backgroudimages/Train_Rail_during_Golden_Hour.jpg");
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: white;
+}
+
+.content p {
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.7;
+    color: white;
+}
+button{
+    display:inline;
+    position: center;
+    margin-top: 20px;
+    width: auto;
+    padding: 10px 18px;
+    background-color: #4CAF50;
+    border:none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+.cancelbtn{
+    background-color: red;
+}
+.cancelbtn:hover {
+    background-color: #555;
+    color: white;
+}
+
+input[type=text], input[type=password] {
+    width: 60%;
+    padding: 10px 10px;
+    margin-bottom: 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+}
+/*===============*/
+/*============overlay===========*/
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+    opacity: 0.6;
+}
+
+.container-item:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.picture {
+
+    object-fit: cover;
+    height:50%;
+    width: 50%;
+    margin:auto;
+    padding:20px;
+
+
+
+}
+.submit{
+
+    background-color: #4CAF50;
+
+}
+.submit:hover{
+    background-color: black;
+    color: white;
+}
+.button{
+    float:right;
+    margin:15px 15px 0 0;
+    background-color: #3aa55a;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: #555;
+    color: white;
+}
+.container-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+a{
+    text-decoration:none;
+    cursor:pointer;
+    color:white;
+}
+p{
+    font-family: Verdana,Geneva;
+    color:white;
+    text-align: center;
+}
+
+/*============imgae =====*/
+li {
+    list-style: none;
+    float: left;
+    width: 33.3%;/*三列图片排列*/
+    height: 100px;/*当图片尺寸不一的时候，设置一个高度*/
+    overflow: hidden;/*超出隐藏*/
+}
+
+li img {
+
+    position: relative;
+    width: 100%;
+    top: 50%; /*li高度的一半*/
+    transform: translateY(-50%);
+}
+/*再向上移动自身的50%*/
+footer{
+    text-align: center;
+    background-color: grey;
+    color:black
+}
